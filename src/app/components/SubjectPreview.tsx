@@ -67,7 +67,11 @@ export default function SubjectPreview() {
 
       <div className="grid md:grid-cols-2 gap-8 items-center">
         {/* Linkerkant - Vakken knoppen */}
-        <div className="space-y-4" style={{ fontFamily: 'Kalam, sans-serif' }}>
+        <div className="space-y-4"   style={{
+                          fontFamily: "Kalam, sans-serif",
+                          fontWeight: 700, // Zorg ervoor dat het bold is
+                          color: "#2E2E4F",
+                        }}>
           {subjects.map((subject) => (
             <motion.button
               key={subject.id}
