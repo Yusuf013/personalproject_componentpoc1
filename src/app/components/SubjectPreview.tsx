@@ -2,6 +2,13 @@
 
 import { useState } from "react";
 import { motion } from "framer-motion";
+import { Kalam } from 'next/font/google';
+
+const kalam = Kalam({
+  subsets: ['latin'],
+  weight: '700', // Alleen Bold, pas dit aan naar jouw wens
+});
+
 
 interface Subject {
   id: number;
@@ -48,15 +55,23 @@ export default function SubjectPreview() {
 
   return (
     <div className="max-w-6xl mx-auto px-4 py-8">
-      <h2 className="text-2xl text-black font-bold text-center mb-8">Populaire vakken</h2>
+      <div className="flex flex-col justify-center"  style={{ fontFamily: 'Kalam, sans-serif' }}>
+        <h2 className="text-3xl text-black font-bold text-center mb-1">Populaire vakken</h2>
+        <img 
+          src="/images/image container.svg" 
+          className="w-[70px] h-[20px] mx-auto" 
+          alt="Image container" 
+          />
+        </div>
+
 
       <div className="grid md:grid-cols-2 gap-8 items-center">
         {/* Linkerkant - Vakken knoppen */}
-        <div className="space-y-4">
+        <div className="space-y-4" style={{ fontFamily: 'Kalam, sans-serif' }}>
           {subjects.map((subject) => (
             <motion.button
               key={subject.id}
-              className={`w-full py-4 px-6 rounded-full text-xl font-bold text-center transition-colors 
+              className={`w-full py-4 px-6 rounded-full text-2xl font-bold text-center transition-colors 
                 ${subject.color} 
                 ${subject.id === 5 ? "text-white" : "text-black"} 
                 hover:opacity-90`}
