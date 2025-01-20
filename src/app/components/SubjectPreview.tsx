@@ -79,7 +79,7 @@ export default function SubjectPreview() {
             className="absolute inset-0"
           >
             <div className="relative w-full h-full">
-              <div className="absolute inset-0 bg-[#F4D7F3] rounded-lg" />
+              <div className="absolute inset-0 bg-transparent rounded-lg" />
               <img
                 src={subjects[activeSubject - 1].image || "/placeholder.svg"}
                 alt={subjects[activeSubject - 1].name}
