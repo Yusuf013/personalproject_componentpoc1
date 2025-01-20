@@ -15,31 +15,31 @@ const subjects: Subject[] = [
     id: 1,
     name: "Taal",
     color: "bg-[#D4A5D3]",
-    image: "/images/PPplaceholder1.png",
+    image: "/images/ppp1.png",
   },
   {
     id: 2,
     name: "Rekenen",
     color: "bg-[#E07A5F]",
-    image: "/images/PPplaceholder2.png",
+    image: "/images/ppp2.png",
   },
   {
     id: 3,
     name: "Wereldoriëntatie",
     color: "bg-[#B7C4CF]",
-    image: "/images/PPplaceholder1.png",
+    image: "/images/ppp3.png",
   },
   {
     id: 4,
     name: "Handvaardigheid",
     color: "bg-[#BEE9F1]",
-    image: "/images/PPplaceholder2.png",
+    image: "/images/ppp4.png",
   },
   {
     id: 5,
     name: "Beeldende vorming",
     color: "bg-[#3D2B3D]",
-    image: "/images/PPplaceholder1.png",
+    image: "/images/ppp5.png",
   },
 ];
 
